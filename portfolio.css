@@ -492,35 +492,34 @@ body {
 
 
 
-
-/* The parent container */
+/* Circular mail icon */
 .mail-icon {
-    position: fixed; /* Keeps it in a fixed position when scrolling */
-    bottom: 20px; /* Position from the bottom */
-    right: 20px; /* Position from the right */
-    width: 60px; /* Fixed width */
-    height: 60px; /* Fixed height */
-    background-color: #007BFF; /* Background color of the icon */
-    border-radius: 50%; /* Makes it a circle */
-    display: flex; /* Flexbox for centering the icon */
-    justify-content: center; /* Center the icon horizontally */
-    align-items: center; /* Center the icon vertically */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
-    z-index: 1000; /* Ensure it's above other content */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    position: fixed; /* Stays fixed at the bottom-right of the viewport */
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right */
+    width: 60px; /* Circular container width */
+    height: 60px; /* Circular container height */
+    background-color: #007BFF; /* Blue background color */
+    border-radius: 50%; /* Makes it circular */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow */
+    z-index: 1000; /* Ensures it stays on top of other elements */
+    cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
-/* Styling for the icon */
-.mail-icon svg {
-    width: 32px;
-    height: 32px;
-    fill: none; /* No fill, for outline style */
-    stroke: white; /* White outline for the icon */
+/* Styling the mail icon */
+.mail-icon a {
+    color: white; /* White icon color */
+    font-size: 30px; /* Larger icon size */
+    text-decoration: none; /* No underline */
 }
 
-/* Add a hover effect for better user experience */
+/* Hover effect */
 .mail-icon:hover {
-    background-color: #0056b3; /* Darken the background on hover */
+    background-color: #0056b3; /* Slightly darker background on hover */
 }
+
 
 /* container3 ends */
