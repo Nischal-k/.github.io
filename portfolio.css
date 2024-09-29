@@ -487,4 +487,40 @@ body {
     height: auto;
     width: auto;
 }
+
+
+
+
+
+
+/* The parent container */
+.mail-icon {
+    position: fixed; /* Keeps it in a fixed position when scrolling */
+    bottom: 20px; /* Position from the bottom */
+    right: 20px; /* Position from the right */
+    width: 60px; /* Fixed width */
+    height: 60px; /* Fixed height */
+    background-color: #007BFF; /* Background color of the icon */
+    border-radius: 50%; /* Makes it a circle */
+    display: flex; /* Flexbox for centering the icon */
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+    z-index: 1000; /* Ensure it's above other content */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styling for the icon */
+.mail-icon svg {
+    width: 32px;
+    height: 32px;
+    fill: none; /* No fill, for outline style */
+    stroke: white; /* White outline for the icon */
+}
+
+/* Add a hover effect for better user experience */
+.mail-icon:hover {
+    background-color: #0056b3; /* Darken the background on hover */
+}
+
 /* container3 ends */
