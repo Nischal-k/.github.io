@@ -505,7 +505,7 @@ body {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow */
-    z-index: 1000; /* Ensures it stays on top of other elements */
+    z-index: 100000; /* Ensures it stays on top of other elements */
     cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
@@ -514,11 +514,13 @@ body {
     color: white; /* White icon color */
     font-size: 30px; /* Larger icon size */
     text-decoration: none; /* No underline */
+     z-index: 100000; 
 }
 
 /* Hover effect */
 .mail-icon:hover {
     background-color: #0056b3; /* Slightly darker background on hover */
+     z-index: 100000; 
 }
 
 
