@@ -1,6 +1,9 @@
+/* General styles */
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 :root {
@@ -9,8 +12,12 @@ body {
     --white-color: white;
 }
 
-/* fixed hire me tag */
-
+p {
+    margin: 0em 1.2em 0em 0em;
+    padding: 0.3125em;
+    font-size: 1em;
+}
+/* Fixed hire me tag */
 .orange-box {
     position: fixed;
     top: 2.5em;
@@ -82,11 +89,7 @@ body {
     transform: translateY(-50%) rotate(-45deg);
 }
 
-/* fixed hire me tag */
-
-
 /* Navigation bar of the left side */
-
 #navbar {
     position: fixed;
     min-width: 18.125em;
@@ -100,7 +103,7 @@ body {
 }
 
 #navbar:hover {
-    box-shadow: 10px 0 15px rgba(255, 154, 2, 0.163); /* Box shadow on the right side */
+    box-shadow: 10px 0 15px rgb(244, 66, 2); /* Box shadow on the right side */
     transform: translateX(0.625em);  
 }
 
@@ -117,19 +120,18 @@ body {
     margin-bottom: -0.3125em;
 }
 
-
 .image-container {
     border-radius: 110px;
-    height: 7em;
-    width: 7em;
+    height: 14em;
+    width: 14em;
     background-image: url(./images/profile-picture.png);
     margin: 2.5em auto;
     box-shadow: inset 0 0 20px white;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 6em;
 }
-
 
 .menus {
     display: inline-block;
@@ -156,7 +158,6 @@ body {
     padding: 0.55em;
 }
 
-
 .navbar-info h5:hover, .navbar-info h5.selected {
     box-shadow: inset 0 0 8px 3px rgba(230, 230, 230, 0.687);
     border-radius: 16px;
@@ -173,7 +174,7 @@ body {
 .social-links {
     height: 7.375em;
     width: 7.375em;
-    margin-top: 3.75em;
+    margin-top: 8em;
     margin-left: 4.5em;
     z-index: 111;
     display: flex;
@@ -192,11 +193,7 @@ body {
     transform: scale(1.12);
 }
 
-/* Navigation bar of the left side  ends*/
-
-
-/* main page of the portfolio which contains all three containers*/
-
+/* Main page of the portfolio which contains all three containers */
 #mainpage {
     margin-left: 25vw;
     width: 73vw;
@@ -208,6 +205,7 @@ body {
     background-color: var(--white-color);
 }
 
+/* Container styles */
 .container1, .container2, .container3 {
     position: relative;
     width: 100%;
@@ -215,8 +213,7 @@ body {
     box-sizing: border-box;
 }
 
-/* main page of the portfolio which contains all three containers   ends  */
-
+/* Progress bar */
 #progress-bar {
     position: fixed;
     display: none;
@@ -227,16 +224,13 @@ body {
     transition: width 0.25s ease;
 }
 
-/* main page/container of the portfolio starts  */
-
-/* container1 starts */
-
+/* Container1 styles */
 .container1 {
     background-color: var(--white-color);
     background: linear-gradient(-135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0.01) 50%, rgba(0, 0, 0, 0) 75%);
 }
 
-.orange {                                                 /* orange box  */
+.orange {
     background-color: var(--main-color);
     border: 2px solid none; 
     border-radius: 14px;
@@ -252,7 +246,7 @@ body {
     position: relative;
     width: fit-content;
     margin-top: -3.125em;
-    margin-left: 12.5em;
+    margin-left: 15.5em;
     border: 2px solid rgba(128, 128, 128, 0.728);
     border-radius: 25px;
     padding: 1.25em;
@@ -267,7 +261,7 @@ body {
     margin: 0;
     font-weight: normal;
 }
- 
+
 .orange-word {
     color: orange;
     display: inline-block;
@@ -285,80 +279,44 @@ body {
     margin: 1.25em 0 0 14.375em;
 }
 
-.line5 {
-    margin-top: 10.5em;
-    margin-left: -9.375em;
-    left: 20em;
-    bottom: 3.75em;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-}
-
-.readmore {
-    height: auto;
-    width: auto;
-    text-decoration: none;
-    font-size: medium;
-    color: black;
-    font-family: "Montserrat", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    border-radius: 25px;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
-    padding: 0.625em;
-}
-
-.readmore:hover {
-    box-shadow: none;  
-}
-
-.readmore i {
-    margin: 0;
-    padding: 0;
-}
-
-/* Container1  ends  */
-
-/* container2 starts */
+/* Container2 styles */
 .container2 {
     display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-x: auto;
     background-color: var(--white-color);
-    scroll-snap-type: x mandatory; /* Optional: Snap effect */
+    scroll-snap-type: x mandatory;
     padding-top: 5.5em;
 }
 
 .work-container {
-    flex: 0 0 38%; /* Each work container takes up 45% of the container's width */
-    height: 30em;
-    margin: 1.25em 1em 1.25em 1em;
+    flex: 0 0 38%;
+    height: 90%;
+    margin: 1.25em 1em;
     padding-left: 1em;
     border-radius: 15px;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
     position: relative;
     display: flex;
-    flex-direction: column; /* Arrange items vertically */
-    justify-content: center; /* Center the inner containers horizontally */
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    scroll-snap-align: start; /* Optional: Snap effect */
+    scroll-snap-align: start;
     text-decoration: none;
 }
 
 .work-container:hover {
-    transform: scale(1.05);
+    transform: scale(1.025);
     box-shadow: none;
 }
 
-/* Optional: Additional styles for smoother scrolling */
 .container2::-webkit-scrollbar {
-    display: none; /* Hide scrollbar on WebKit browsers */
+    display: none;
 }
 
 .top-container {
     margin: 0 0 1.25em 0;
-    height: 80%;
+    height: 90%;
     width: 100%;
     border-radius: 15px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
@@ -373,10 +331,12 @@ body {
     background-image: url(./images/MAGZINE.png);
     background-size: cover;
 }
+
 .top-three {
     background-image: url(./images/TRIBUTE.png);
     background-size: cover;
 }
+
 .top-four {
     background-image: url(./images/typography.png);
     background-size: cover;
@@ -389,7 +349,7 @@ body {
 
 .bottom-container {
     margin-bottom: 1.25em;
-    height: 28%;
+    height: 15%;
     width: 100%;
     border-radius: 15px;
     background-color: var(--white-color);
@@ -414,12 +374,9 @@ body {
     font-size: small;
     font-weight: normal;
     color: black;
-
 }
-/* container2 ends */
 
-/* container3 starts */
-
+/* Container3 styles */
 .container3 {
     background-color: var(--white-color);
     font-family: "Montserrat", sans-serif;
@@ -432,7 +389,7 @@ body {
 }
 
 .container3 h1 {
-    margin: 0.25em 0;
+    margin: 1.25em 0 0.25em;
     font-size: 3em;
     font-weight: bolder;
 }
@@ -443,15 +400,16 @@ body {
     font-weight: normal;
 }
 
-.container3 article{
+.container3 article {
     padding: 0.5em 0;
 }
+
 .container3 p {
-    font-size: medium;
+    font-size: 1.2em;
 }
 
 .ending {
-    margin: 0;
+    margin-top: 5em;
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -488,40 +446,317 @@ body {
     width: auto;
 }
 
-
-
-
-
-/* Circular mail icon */
-.mail-icon {
-    position: fixed; /* Stays fixed at the bottom-right of the viewport */
-    bottom: 20px; /* 20px from the bottom */
-    right: 20px; /* 20px from the right */
-    width: 60px; /* Circular container width */
-    height: 60px; /* Circular container height */
-    background-color: #007BFF; /* Blue background color */
-    border-radius: 50%; /* Makes it circular */
-    display: flex; /* Flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow */
-    z-index: 100000; /* Ensures it stays on top of other elements */
-    cursor: pointer; /* Changes cursor to pointer on hover */
+/* Chat Bot */
+#chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling the mail icon */
-.mail-icon a {
-    color: white; /* White icon color */
-    font-size: 30px; /* Larger icon size */
-    text-decoration: none; /* No underline */
-     z-index: 100000; 
+#chat-icon i {
+    color: white;
+    font-size: 24px;
 }
 
-/* Hover effect */
-.mail-icon:hover {
-    background-color: #0056b3; /* Slightly darker background on hover */
-     z-index: 100000; 
+.chat-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+#close-chat {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.chat-box {
+    height: 300px;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.bot-message, .user-message {
+    padding: 8px 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+.bot-message {
+    background-color: #e0e0e0;
+    color: #000;
+    text-align: left;
+}
+
+.user-message {
+    background-color: #0084ff;
+    color: #fff;
+    text-align: right;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+}
+
+button {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    background-color: #0084ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .navbar-info {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 0;
+    }
+
+    .image-container {
+        height: 5em;
+        width: 5em;
+        margin: 1em;
+    }
+
+    #mainpage {
+        margin-left: 0;
+        width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .container1, .container2, .container3 {
+        height: auto;
+    }
+
+    .inner-container {
+        margin: 0 auto;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .line4, .line5 {
+        margin: 1em auto;
+        text-align: center;
+    }
+
+    .ending {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left, .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-container {
+        width: 90%;
+        margin: 1em 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .menus h5 {
+        font-size: medium;
+    }
+
+    .container3 h1 {
+        font-size: 2em;
+    }
+
+    .headlines {
+        font-size: 1.5em;
+    }
 }
 
 
-/* container3 ends */
+/* Chat Bot */
+/* Style for the chat icon */
+/* Base styles for the chat icon */
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;  /* Default size for larger screens */
+    height: 80px; /* Default size for larger screens */
+    background-color: #ff7f50;  /* Orange color */
+    border: 2px solid #ff4500;  /* Darker orange border */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for chat icon */
+.chat-icon:hover {
+    background-color: #ff4500;  /* Darker orange */
+    transform: scale(1.1);
+}
+
+/* Style for the Material Icon */
+.chat-icon i {
+    font-size: 30px;  /* Icon size for large screens */
+    color: white;
+}
+
+/* Responsive Design for tablets and small screens */
+@media (max-width: 1024px) {
+    .chat-icon {
+        width: 50px;  /* Smaller size for tablets */
+        height: 50px;
+    }
+
+    .chat-icon i {
+        font-size: 24px;  /* Smaller icon for tablets */
+    }
+}
+
+/* Responsive Design for small screens (e.g., smartphones) */
+@media (max-width: 768px) {
+    .chat-icon {
+        width: 45px;  /* Even smaller size for smartphones */
+        height: 45px;
+    }
+
+    .chat-icon i {
+        font-size: 22px;  /* Slightly smaller icon for smartphones */
+    }
+}
+
+/* For extra small devices (portrait phones) */
+@media (max-width: 480px) {
+    .chat-icon {
+        width: 40px;  /* Very small size for portrait phones */
+        height: 40px;
+    }
+
+    .chat-icon i {
+        font-size: 20px;  /* Icon reduced further for mobile screens */
+    }
+}
+
+/* For very small devices (mobile landscape mode) */
+@media (max-width: 375px) {
+    .chat-icon {
+        width: 35px;  /* Super small size for small landscape screens */
+        height: 35px;
+    }
+
+    .chat-icon i {
+        font-size: 18px;  /* Even smaller icon for smaller screens */
+    }
+}
+
+/* Style for the chat box */
+.chat-box {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 320px;
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #ff4500;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat header */
+.chat-header {
+    background-color: #ff7f50;  /* Orange color */
+    padding: 12px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Close button */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Chat content */
+.chat-content {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Input field */
+.chat-input {
+    padding: 12px;
+    border: none;
+    border-top: 2px solid #ff4500;
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+}
