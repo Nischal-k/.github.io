@@ -15,8 +15,13 @@ body {
 p {
     margin: 0em 1.2em 0em 0em;
     padding: 0.3125em;
-    font-size: 1em;
+    font-size: 0.75em;
 }
+
+.achievement-container {
+    margin: 0.75em 0;
+}
+
 /* Fixed hire me tag */
 .orange-box {
     position: fixed;
@@ -122,8 +127,8 @@ p {
 
 .image-container {
     border-radius: 110px;
-    height: 14em;
-    width: 14em;
+    height: 10em;
+    width: 10em;
     background-image: url(./images/profile-picture.png);
     margin: 2.5em auto;
     box-shadow: inset 0 0 20px white;
@@ -145,7 +150,7 @@ p {
 .navbar-info h5 {
     display: inline-block;
     margin: 0;
-    padding: 0.625em;
+    padding: 0.525em;
     height: fit-content;
     font-family: "montserrat", "Helvetica Neue", Helvetica, Arial;
     font-size: x-large;
@@ -174,7 +179,7 @@ p {
 .social-links {
     height: 7.375em;
     width: 7.375em;
-    margin-top: 8em;
+    margin-top: 5em;
     margin-left: 4.5em;
     z-index: 111;
     display: flex;
@@ -249,7 +254,7 @@ p {
     margin-left: 15.5em;
     border: 2px solid rgba(128, 128, 128, 0.728);
     border-radius: 25px;
-    padding: 1.25em;
+    padding: 0.75em;
     font-family: monospace;
     background-color: var(--white-color);
     z-index: 111;
@@ -269,7 +274,7 @@ p {
 
 .line h2 {
     margin: 0;
-    padding: 0.3125em;
+    padding: 0.2125em;
     font-family: monospace, serif;
     font-weight: bold;
     font-size: x-large;
