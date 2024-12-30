@@ -81,10 +81,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Ensure at least one menu item is always hovered on page load
     ensureAtLeastOneHovered();
 
-    // Ensure at least one menu item is always hovered on page load
+
     if (!document.querySelector(".menus.selected")) {
         navLinks[0].classList.add("selected");
         icons[0].style.color = "orangered";
@@ -117,4 +116,18 @@ window.addEventListener('scroll', function () {
         progressBar.style.width = scrollPercent + '%';
     }
 });
+
+
+
+
+// AI chat box // 
+// Toggle the chat box visibility
+function toggleChat() {
+    const chatBox = document.getElementById('chatBox');
+    if (chatBox.style.display === 'none' || chatBox.style.display === '') {
+        chatBox.style.display = 'flex';
+    } else {
+        chatBox.style.display = 'none';
+    }
+}
 
