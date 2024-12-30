@@ -11,12 +11,6 @@ body {
     --passive-button-color: rgba(133, 131, 131, 0.898);
     --white-color: white;
 }
-
-p {
-    margin: 0em 1em 0em 0em;
-    padding: 0.3125em;
-    font-size: 1em;
-}
 /* Fixed hire me tag */
 .orange-box {
     position: fixed;
