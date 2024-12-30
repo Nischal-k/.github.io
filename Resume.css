@@ -41,7 +41,7 @@ body {
     color: rgb(0, 0, 0);
     background-color: transparent;
     padding: 0 0.325em;
-    font-size: 0.4em;
+    font-size: 0.2em;
     font-family: "Montserrat", serif;
     font-weight: bold;
 }
@@ -232,14 +232,14 @@ body {
     height: 5em;
     width: 5em;
     z-index: 11;
-    margin-top: 5em;
+    margin-top: 3em;
     margin-left: 10.625em;
 }
 
 .inner-container {
     position: relative;
     width: fit-content;
-    margin-top: -4.125em;
+    margin-top: -5.125em;
     margin-left: 15.5em;
     border: 2px solid rgba(128, 128, 128, 0.728);
     border-radius: 25px;
