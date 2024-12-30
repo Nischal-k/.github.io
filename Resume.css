@@ -13,7 +13,7 @@ body {
 }
 
 p {
-    margin: 0em 1.2em 0em 0em;
+    margin: 0em 1em 0em 0em;
     padding: 0.3125em;
     font-size: 1em;
 }
@@ -26,8 +26,8 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 10em;
-    height: 5.625em;
+    width: 9em;
+    height: 5em;
     background-color: orangered;
     box-shadow: 0 0 30px orangered;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -95,7 +95,7 @@ p {
     min-width: 18.125em;
     top: 0;
     left: 0;
-    width: 25vw;
+    width: 20vw;
     height: 100%;
     z-index: 11;
     background-color: var(--white-color);
@@ -122,21 +122,21 @@ p {
 
 .image-container {
     border-radius: 110px;
-    height: 14em;
-    width: 14em;
+    height: 12em;
+    width: 12em;
     background-image: url(./images/profile-picture.png);
     margin: 2.5em auto;
     box-shadow: inset 0 0 20px white;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 6em;
+    margin-bottom: 4em;
 }
 
 .menus {
     display: inline-block;
     display: flex;
-    height: 3.75em;
+    height: 3em;
     flex-direction: row;
     text-decoration: none;
     color: black;
@@ -172,9 +172,9 @@ p {
 }
 
 .social-links {
-    height: 7.375em;
-    width: 7.375em;
-    margin-top: 8em;
+    height: 7em;
+    width: 7em;
+    margin-top: 6em;
     margin-left: 4.5em;
     z-index: 111;
     display: flex;
