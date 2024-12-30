@@ -19,7 +19,18 @@ p {
 }
 
 .achievement-container {
-    margin: 0.75em 0;
+    margin: 0em;
+    padding: 0em;
+}
+
+.achievement-container h3{
+    margin: 0.625em;
+    padding: 0em;
+}
+
+.achievement-container h4{
+    margin: 0.625em 0em 0em 0em;
+    padding: 0em;
 }
 
 /* Fixed hire me tag */
@@ -135,7 +146,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 6em;
+    margin-bottom: 4em;
 }
 
 .menus {
@@ -179,7 +190,7 @@ p {
 .social-links {
     height: 7.375em;
     width: 7.375em;
-    margin-top: 5em;
+    margin-top: 3em;
     margin-left: 4.5em;
     z-index: 111;
     display: flex;
@@ -243,14 +254,14 @@ p {
     height: 5em;
     width: 5em;
     z-index: 11;
-    margin-top: 8.75em;
-    margin-left: 10.625em;
+    margin-top: 6.75em;
+    margin-left: 11em;
 }
 
 .inner-container {
     position: relative;
     width: fit-content;
-    margin-top: -3.125em;
+    margin-top: -5.125em;
     margin-left: 15.5em;
     border: 2px solid rgba(128, 128, 128, 0.728);
     border-radius: 25px;
