@@ -4,6 +4,8 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    background-color: rgba(28, 28, 28);
+
 }
 
 :root {
@@ -114,8 +116,9 @@ p {
     width: 25vw;
     height: 100%;
     z-index: 11;
-    background-color: var(--white-color);
     transition: box-shadow 0.4s ease-in-out, transform 0.4s ease-in-out;
+    display: flex; /* Added */
+    align-items: center; /* Vertically center content */
 }
 
 #navbar:hover {
@@ -128,8 +131,10 @@ p {
     flex-direction: column;
     margin-left: 4em;
     width: fit-content;
+    height: fit-content; /* Added */
+    margin-top: 0; /* Reset margin */
+    margin-bottom: 0; /* Reset margin */
 }
-
 .material-icons {
     display: inline-block;
     padding: 0;
@@ -141,12 +146,11 @@ p {
     height: 10em;
     width: 10em;
     background-image: url(./images/profile-picture.png);
-    margin: 2.5em auto;
+    margin: 0 auto 3em auto; /* Adjusted margins */
     box-shadow: inset 0 0 20px white;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 4em;
 }
 
 .menus {
@@ -190,13 +194,11 @@ p {
 .social-links {
     height: 7.375em;
     width: 7.375em;
-    margin-top: 3em;
-    margin-left: 4.5em;
+    margin: 3em auto 0 auto; /* Centered with margin */
     z-index: 111;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    justify-items: space-between;
 }
 
 .social-links a {
@@ -218,7 +220,7 @@ p {
     display: flex;
     flex-direction: column;
     padding: 0 0 0 1.5625em;
-    background-color: var(--white-color);
+    background-color: rgba(28, 28, 28);
 }
 
 /* Container styles */
@@ -241,34 +243,46 @@ p {
 }
 
 /* Container1 styles */
+/* Container1 styles */
 .container1 {
-    background-color: var(--white-color);
     background: linear-gradient(-135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0.01) 50%, rgba(0, 0, 0, 0) 75%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Takes full viewport height */
+    width: 100%;
+    position: relative;
+    padding: 2em 0; /* Add some padding to prevent touching edges */
+    box-sizing: border-box;
 }
 
 .orange {
     background-color: var(--main-color);
     border: 2px solid none; 
     border-radius: 14px;
-    position: relative;
-    height: 5em;
-    width: 5em;
+    box-shadow: #ff4500 0px 0px 20px;
+    position: absolute;
+    height: 7.5em;
+    width: 8em;
     z-index: 11;
-    margin-top: 4.75em;
-    margin-left: 11em;
+    top: 40%;
+    left: 30%;
+    transform: translate(-150%, -50%);
 }
 
 .inner-container {
-    position: relative;
+    position: absolute;
     width: fit-content;
-    margin-top: -3.625em;
-    margin-left: 15.5em;
     border: 2px solid rgba(128, 128, 128, 0.728);
     border-radius: 25px;
-    padding: 0.75em;
+    padding: 2.5em;
     font-family: monospace;
     background-color: var(--white-color);
     z-index: 111;
+    margin: 0 auto;
+    top: 38%;
+    left: 15%;
 }
 
 .inner-container p {
@@ -285,21 +299,31 @@ p {
 
 .line h2 {
     margin: 0;
-    padding: 0.2125em;
+    padding: 0.5em;
     font-family: monospace, serif;
     font-weight: bold;
-    font-size: x-large;
+    font-size: clamp(1rem, 3vw, 1.5rem); /* Responsive font size */
 }
 
-.line4 {
-    margin: 1.25em 0 0 14.375em;
+@media (max-width: 768px) {
+    .orange {
+        transform: translate(-120%, -50%);
+        height: 4em;
+        width: 4em;
+    }
+    
+    .inner-container {
+        padding: 1em;
+    }
+    
+    .line h2 {
+        font-size: clamp(0.8rem, 4vw, 1.2rem);
+    }
 }
-
 /* Container2 styles */
 .container2 {
     display: flex;
     overflow-x: auto;
-    background-color: var(--white-color);
     scroll-snap-type: x mandatory;
     padding-top: 5.5em;
 }
@@ -336,6 +360,7 @@ p {
     width: 100%;
     border-radius: 15px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    background-color: var(--white-color);
 }
 
 .top-one {
@@ -394,14 +419,13 @@ p {
 
 /* Container3 styles */
 .container3 {
-    background-color: var(--white-color);
     font-family: "Montserrat", sans-serif;
-    color: black;
+    color: white;
     padding: 1.25em;
 }
 
 .container3 a {
-    color: black;
+    color: white;
 }
 
 .container3 h1 {
@@ -777,7 +801,105 @@ button:hover {
     color: #333;
 }
 
+/* New Container1.5 Styles */
+.container1-5 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.job-description {
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto 2em;
+    padding: 2.5em;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 69, 0, 0.1);
+}
+
+.job-description h2 {
+    font-size: 2.2em;
+    margin-bottom: 0.8em;
+    color: #333;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.job-description p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 1.2em;
+    color: #555;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.job-description strong {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.achievement-container {
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 69, 0, 0.1);
+}
+
+.achievement-container h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.8em;
+    color: #333;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.achievement-container h4 {
+    font-size: 1.4em;
+    margin-bottom: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.achievement-container a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.achievement-container a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+.qr-code-container {
+    margin: 1.5em auto 0;
+    padding: 1em;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    border: 1px solid #eee;
+}
+
+.qr-code {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.qr-code:hover {
+    transform: scale(1.05);
+}
 
 
 
