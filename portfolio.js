@@ -118,8 +118,6 @@ window.addEventListener('scroll', function () {
 });
 
 
-
-
 // AI chat box // 
 // Toggle the chat box visibility
 function toggleChat() {
@@ -131,3 +129,46 @@ function toggleChat() {
     }
 }
 
+
+// Typewriter animation
+document.addEventListener('DOMContentLoaded', function() {
+    const lines = [
+        { text: "Hi my name is ", orange: "Nischal khadka", delay: 500 },
+        { text: "I'm a Wonderer experiencing ", orange: " life at it's pace", delay: 1500 },
+        { text: "& Working as ", orange: " SDR at Veel.", delay: 2500 },
+        { text: "Welcome ", orange: "to my space", delay: 2500 }
+    ];
+
+    lines.forEach((line, index) => {
+        const lineElement = document.querySelector(`.line${index + 1}`);
+        const textSpan = lineElement.querySelector('.typing-text');
+        const orangeSpan = lineElement.querySelector('.orange-word');
+        
+        // Initial delay
+        setTimeout(() => {
+            // Type the regular text
+            typeWriter(textSpan, line.text, () => {
+                // Then type the orange text
+                typeWriter(orangeSpan, line.orange);
+            });
+        }, line.delay);
+    });
+
+    function typeWriter(element, text, callback) {
+        let i = 0;
+        const speed = 50; // typing speed in ms
+        
+        function typing() {
+            if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i++;
+                setTimeout(typing, speed);
+            } else if (callback) {
+                callback();
+            }
+        }
+        
+        element.textContent = '';
+        typing();
+    }
+});
