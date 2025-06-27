@@ -159,7 +159,7 @@ p {
     height: 3.75em;
     flex-direction: row;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .navbar-info h5 {
@@ -204,6 +204,7 @@ p {
 .social-links a {
     width: 50%;
     height: 50%;
+    background-color: white;
 }
 
 .social-links a:hover {
