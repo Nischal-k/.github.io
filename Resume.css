@@ -4,8 +4,6 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    background-color: rgb(255, 255, 255);
-
 }
 
 :root {
@@ -214,10 +212,7 @@ p {
 
 /* Main page of the portfolio which contains all three containers */
 #mainpage {
-    margin-left: calc(25vw - 20px);
-    margin-top: 20px; 
-    margin-bottom: 20px;
-    margin-right: 20px;
+    margin-left: 25vw;
     width: 73vw;
     padding: 15px;
     z-index: 1;
@@ -225,7 +220,6 @@ p {
     flex-direction: column;
     padding: 0 0 0 1.5625em;
     background-color: rgba(28, 28, 28, 1);
-    border-radius: 15px;
 
 /* Container styles */
 .container1, .container2, .container3 {
