@@ -3,142 +3,357 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Resume.css">
+    <title>Nischal K | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>Nischal, Portfolio</title>
-    <link type="image/png" sizes="96x96" rel="icon" href="./images/icons8-rockettv-96.png">
-    <script src="portfolio.js" defer></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <!-- Work With Me Button -->
-    <a class="orange-box" href="mailto:nixchool@gmail.com?subject=Work%20With%20Me&body=Hi%20[Your%20Name],%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20potential%20project%20with%20you.%0D%0A%0D%0ABest%20regards,%0D%0A[Nischal%20Khadka]">
-        <div class="inner-box1">WORK</div>
-        <div class="arrow"></div>
-        <div class="inner-box2">WITH ME</div>
-    </a>
-
-    <!-- Navigation -->
-    <nav id="navbar">  
-        <div class="navbar-info">  
-            <div class="image-container"></div>
-            <a class="menus" href="#home"><i class="material-icons">home</i><h5>Home</h5></a>
-            <a class="menus" href="#portfolio"><i class="material-icons">school</i><h5>Portfolio</h5></a>
-            <a class="menus" href="#who-am-i"><i class="material-icons">person</i><h5>Who am I?</h5></a>
-            <div class="social-links">
-                <a href="https://www.facebook.com/profile.php?id=100005321266629" target="_blank"><img src="./images/icons8-facebook-50.png"></a>
-                <a href="https://www.instagram.com/nis_chal____/" target="_blank"><img src="./images/icons8-instagram-50.png"></a>
-                <a href="https://www.linkedin.com/in/nischal-khadka-a992a6237/" target="_blank"><img src="./images/icons8-linkedin-50.png"></a>
-                <a href="https://github.com/Nischal-k"><img src="./images/icons8-github-50.png" target="_blank"></a>
+    <!-- Homepage -->
+     <section id="home" class="outer-homepage">
+    <div id="home" class="homepage">
+        <div class="grid-container">
+            <div class="grid-block intro-block" onclick="scrollToSection('intro')">
+                <div>
+                    <h1 class="intro-title">Nischal K</h1>
+                    <p class="intro-subtitle">Security Ehtnusist | SOC | Creative Thinker</p>
+                    <p>"Exploring cybersecurity principles that balance defense strategies with real-world usability. Passionate about understanding threats through hands-on labs and ethical hacking practice."</p>
+                </div>
+                <div class="skills-list">
+                    <span class="skill-pill">Linux</span>
+                    <span class="skill-pill">SIEM Tools</span>
+                    <span class="skill-pill">Threat Detection</span>
+                    <span class="skill-pill">Vulnerability Assessment</span>
+                    <span class="skill-pill">IT Support</span>
+                </div>
             </div>
-            <div style="font-family:Montserrat, serif; margin-left: 60px;">Connect with me</div>
-        </div>   
-    </nav>
-
-    <!-- Main Content -->
-    <main id="mainpage">
-        <div id="progress-bar"></div>
-
-        <!-- Container 1: Introduction -->
-        <section class="container1" id="home">
-    <div class="orange"></div>
-    <div class="inner-container">
-        <span class="line line1">
-            <h2>
-                <p>01 < </p><span class="typing-text"></span><span class="orange-word"></span> !
-            </h2>
-        </span>
-        <span class="line line2">
-            <h2>
-                <p>02</p><span class="typing-text"></span><span class="orange-word"></span>.
-            </h2>
-        </span>
-        <span class="line line3">
-            <h2>
-                <p>03</p><span class="typing-text"></span><span class="orange-word"></span><p>></p>
-            </h2>
-        </span>
+            <div class="grid-block education-block" onclick="scrollToSection('education')">
+                <h2 class="block-title">Education</h2>
+                <p>"My academic journey and continuous learning path."</p>
+                <div class="block-arrow">→</div>
+            </div>
+            
+            <div class="grid-block experience-block" onclick="scrollToSection('experience')">
+                <h2 class="block-title">Experience</h2>
+                <p>"Professional roles and impactful work."</p>
+                <div class="block-arrow">→</div>
+            </div>
+            
+            <div class="grid-block projects-block" onclick="scrollToSection('projects')">
+                <h2 class="block-title">Projects</h2>
+                <p>"Creative solutions and personal initiatives."</p>
+                <div class="block-arrow">→</div>
+            </div>
+            
+            <div class="grid-block stay-in-touch-block" onclick="scrollToSection('stay-in-touch')">
+                <h2 class="block-title">Stay in Touch</h2>
+                <p>"Let's collaborate or just say hello!"</p>
+                <div class="block-arrow">→</div>
+            </div>
+        </div>
+    </div>
+    <div class="wave-container">
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="#B0EBD2" fill-opacity="1" d="M0,128L6.2,128C12.3,128,25,128,37,154.7C49.2,181,62,235,74,250.7C86.2,267,98,245,111,197.3C123.1,149,135,75,148,37.3C160,0,172,0,185,32C196.9,64,209,128,222,138.7C233.8,149,246,107,258,117.3C270.8,128,283,192,295,202.7C307.7,213,320,171,332,138.7C344.6,107,357,85,369,96C381.5,107,394,149,406,160C418.5,171,431,149,443,117.3C455.4,85,468,43,480,32C492.3,21,505,43,517,42.7C529.2,43,542,21,554,53.3C566.2,85,578,171,591,186.7C603.1,203,615,149,628,133.3C640,117,652,139,665,165.3C676.9,192,689,224,702,240C713.8,256,726,256,738,224C750.8,192,763,128,775,133.3C787.7,139,800,213,812,213.3C824.6,213,837,139,849,128C861.5,117,874,171,886,160C898.5,149,911,75,923,64C935.4,53,948,107,960,154.7C972.3,203,985,245,997,224C1009.2,203,1022,117,1034,101.3C1046.2,85,1058,139,1071,144C1083.1,149,1095,107,1108,128C1120,149,1132,235,1145,229.3C1156.9,224,1169,128,1182,90.7C1193.8,53,1206,75,1218,101.3C1230.8,128,1243,160,1255,192C1267.7,224,1280,256,1292,250.7C1304.6,245,1317,203,1329,192C1341.5,181,1354,203,1366,186.7C1378.5,171,1391,117,1403,106.7C1415.4,96,1428,128,1434,144L1440,160L1440,0L1433.8,0C1427.7,0,1415,0,1403,0C1390.8,0,1378,0,1366,0C1353.8,0,1342,0,1329,0C1316.9,0,1305,0,1292,0C1280,0,1268,0,1255,0C1243.1,0,1231,0,1218,0C1206.2,0,1194,0,1182,0C1169.2,0,1157,0,1145,0C1132.3,0,1120,0,1108,0C1095.4,0,1083,0,1071,0C1058.5,0,1046,0,1034,0C1021.5,0,1009,0,997,0C984.6,0,972,0,960,0C947.7,0,935,0,923,0C910.8,0,898,0,886,0C873.8,0,862,0,849,0C836.9,0,825,0,812,0C800,0,788,0,775,0C763.1,0,751,0,738,0C726.2,0,714,0,702,0C689.2,0,677,0,665,0C652.3,0,640,0,628,0C615.4,0,603,0,591,0C578.5,0,566,0,554,0C541.5,0,529,0,517,0C504.6,0,492,0,480,0C467.7,0,455,0,443,0C430.8,0,418,0,406,0C393.8,0,382,0,369,0C356.9,0,345,0,332,0C320,0,308,0,295,0C283.1,0,271,0,258,0C246.2,0,234,0,222,0C209.2,0,197,0,185,0C172.3,0,160,0,148,0C135.4,0,123,0,111,0C98.5,0,86,0,74,0C61.5,0,49,0,37,0C24.6,0,12,0,6,0L0,0Z"></path>
+        </svg>
     </div>
 </section>
-        <!-- New Container 1.5: Professional Details -->
-        <section class="container1-5">
-            <div class="job-description">
-                <h2>Associate CSR at Krispcall, Codavatar.</h2>
-                <p>As a Customer Support Analyst at <strong>KrispCall</strong>, I assist global SMBs with queries, service enrollments, subscriptions, and VoIP number verifications.</p>
-                <p>My responsibilities include creating tickets in <strong>Zendesk</strong>, managing CRM integrations, handling <strong>A2P10DLC verification</strong>, and resolving issues such as service porting and account suspensions.</p>
-                <p>Skilled in professional email communication and problem-solving, I strive to provide outstanding customer support and streamline workflows. Let's connect!</p>
-            </div>
-            
-            <div class="achievement-container">
-                <h3>Scan the QR code below to view my achievements:</h3>
-                <h4><a href="https://nischal-k.notion.site/Achievements-16b3c8c1d9c28024b27adbbb85139f4d?pvs=4" target="next-page"><b style="color: rgb(255, 85, 0)">Click Me.&#9829;</b></a></h4>
-                <div class="qr-code-container">
-                    <img src="QR.png" alt="QR Code to Achievements Portal" class="qr-code">
-                </div>
-            </div>
-        </section>
 
-        <!-- Container 2: Portfolio -->
-        <section class="container2" id="portfolio">
-            <a class="work-container" href="file:///home/mr-khadka/Desktop/JAVASCRIPT/portfolio/product%20landing%20page/product-landing-page.html" target="new-page">
-                <div class="top-container top-one"></div>
-                <div class="bottom-container"><h3>PRODUCT LANDING PAGE</h3><p>Demonstration of a product landing page. Includes details of products and prices.</p></div>
-            </a>
-            <a class="work-container" href="file:///home/mr-khadka/Desktop/JAVASCRIPT/portfolio/MAGAZINE/magazine.html" target="new-page">
-                <div class="top-container top-two"></div>
-                <div class="bottom-container"><h3>MAGAZINE</h3><p>Display of different topic and headdings inside a magazine page. Section for each story </p></div>
-            </a>
-            <a class="work-container" href="file:///home/mr-khadka/Desktop/JAVASCRIPT/portfolio/TRIBUTE-PAGE/TRUBUTE-PAGE.HTML" target="new-page">
-                <div class="top-container top-three"></div>
-                <div class="bottom-container"><h3>TRIBUTE-PAGE</h3><p>Dr. Norman Borlaug, an agronomist, developed high-yield crops, leading the Green Revolution and reducing global hunger.</p></div>
-            </a>
-            <a class="work-container" href="file:///home/mr-khadka/Desktop/JAVASCRIPT/portfolio/nutrients/NUTRIENTS.HTML" target="new-page">
-                <div class="top-container top-four"></div>
-                <div class="bottom-container"><h3>NUTRIENTS TYPOGRAPHY</h3><p>Typography play on a Nutrients facts stated for clear visibility and understandibility.</p></div>
-            </a>
-            <a class="work-container" href="file:///home/mr-khadka/Desktop/JAVASCRIPT/portfolio/Technical-page/Technical-page.html" target="new-page">
-                <div class="top-container top-five"></div>
-                <div class="bottom-container"><h3>JAVASCRIPT DOCUMENTATION</h3><p>A comprehensive technical documentation page for JavaScript. This page provides description and features intuitive navigation to enhance ease and efficiency for users.</p></div>
-            </a>
-        </section>
+<!-- Introduction Page -->
+<section id="intro" class="page-container">
+    <div class="page-header">
+        <h1 class="page-title">Introduction</h1>
+        <button class="back-button" onclick="scrollToSection('home')">← Home</button>
+    </div>
+    
+    
+    <div class="intro-container">
+        <!-- Left container with profile picture (1/4 width) -->
+        <div class="profile-container">
+            <div class="profile-image" style="background-image: url('./profilepp.webp');"></div>
+        </div>
         
-        <!-- Container 3: About Me -->
-        <section class="container3" id="who-am-i">
-            <h1>NISCHAL KHADKA</h1>
-            <article class="headlines">I Design, Develop & Secure <br> websites for businesses.</article> 
-            <p>I'm a cybersecurity geek who loves diving into networking, breaking into systems <strong>(ethically!),</strong> <br>and solving CTF challenges for fun. Bug bounty hunting keeps me on my toes, <br>and there's nothing more exciting than finding a sneaky vulnerability.<br></p>      
-            <article class="headlines">Growing, Developing<br> and Securing</article>
-            <p>It's all about the thrill of learning, hacking, and making the digital world safer one step at a time.&#127807; &#127793; &#128187; &#10084; &#65039; </p>
-            <br><a href="https://github.com/Nischal-k" target="next-page"><b style="color: rgb(255, 85, 0);">Discover me on Github.&#9829;</b></a></p>
-            
-            <div class="ending">
-                <div class="left">
-                    <h3>Codings and Graphics</h3>
-                    <div class="left-box">
-                        <img src="./images/icons8-html-48.png" />
-                        <img src="./images/icons8-figma-48.png" />
-                        <img src="./images/icons8-tailwind-css-48.png" />
-                        <img src="./images/icons8-css-48.png" />
-                        <img src="./images/icons8-javascript-48.png" />
-                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode.svg" alt="VScode" width="48" height="48" />
+        <!-- New Outer Description Container -->
+        <div class="outer-description-container">
+            <!-- Right container with description (3/4 width) -->
+            <div class="description-container">
+                <!-- Top section -->
+                    <div class="description-top">
+        <h1>HELLO<span class="highlight">!</span></h1>
+    </div>
+        
+                <!-- Middle section -->
+                <div class="description-middle">
+    <p>My name is <strong>Nischal Khadka</strong>, a <strong>Cybersecurity Enthusiast</strong>.<br>
+    I am based in Nepal and have been engaged in the cybersecurity field for about a year. I enjoy participating in CTFs and researching new threats and vulnerabilities. I usually focus on areas like network security, incident analysis, threat intelligence, and system hardening. I am passionate about learning and exploring new possibilities in the ever-evolving security landscape.</p>
+</div>
+
+                
+                <!-- Bottom section -->
+                <div class="description-bottom">
+                    <div class="contact-column left-column">
+                        <a href="mailto:nixchool@gmail.com" class="contact-capsule">
+                            <span>nixchool@gmail.com</span>
+                        </a>
+                        <a href="www.linkedin.com/in/nischal-khadka-a992a6237" target="_blank" class="contact-capsule">
+                            <span>@Nischal_kc</span>
+                        </a>
                     </div>
-                </div>
-                <div class="right">
-                    <h3>Cyber Security & Networking</h3>
-                    <div class="right-box">
-                        <img src="./images/Cisco-Logo-PNG-Image-2055686670.png" />
-                        <img src="./images/icons8-linux-48.png" />
-                        <img src= "https://logowik.com/content/uploads/images/bash-icon2399.logowik.com.webp" alt="bash"width="48" height="48" />
-                        <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="48" height="48"/>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="48" height="48"/>
+                    <div class="contact-column right-column">
+                        <a href="https://medium.com/@nixchool" target="_blank" class="contact-capsule right-aligned">
+                            <span>/medium.com/@nixchool</span>
+                        </a>
+                        <a href="tel:+9779818219000" class="contact-capsule right-aligned">
+                            <span>(+977) 98-1821-9000 </span>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
+</section>
 
-    <script src="portfolio.js"></script>
+     <!-- Education Page -->
+    <section id="education" class="page-container">
+        <div class="page-header">
+            <h1 class="page-title">Education</h1>
+            <button class="back-button" onclick="scrollToSection('home')">←Home</button>
+        </div>
+        
+        <div class="education-content">
+            <div class="education-description">
+                <p class="animate-education"><strong class="quotation">"</strong> My educational background in technology serves as the foundation for my cybersecurity knowledge, which I continually develop through self-directed learning to stay current with attack vectors and defense strategies. <strong class="quotation">"</strong></p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-container">
+                    <div class="timeline-milestone">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2020</div>
+                            <div class="timeline-description">[ High School Diploma ]</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-milestone">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2023</div>
+                            <div class="timeline-description">SOC Analyst Learning path</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-milestone">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2024</div>
+                            <div class="timeline-description">[ Bachelor's in Cybersecirty and Networking ]</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-milestone">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2024</div>
+                            <div class="timeline-description">[ Network Defense Essential ]</div>
+                        </div>
+                    </div>
+                    <div class="timeline-milestone">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2025</div>
+                            <div class="timeline-description">[ PRESENT ]</div>
+                        </div>
+                    </div>
+                    <div class="timeline-milestone">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">20..</div>
+                            <div class="timeline-description">[ FUTURE ]</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Experience Page -->
+<section id="experience" class="page-container">
+    <div class="page-header">
+        <h1 class="page-title">Experience</h1>
+        <button class="back-button" onclick="scrollToSection('home')">← Home</button>
+    </div>
+    
+    <div class="experience-slider">
+        <div class="slide" style="background-color: #f0f0f0;">Image 1</div>
+        <div class="slide" style="background-color: #e0e0e0;">Image 2</div>
+        <div class="slide" style="background-color: #d0d0d0;">Image 3</div>
+        <div class="slide" style="background-color: #c0c0c0;">Image 4</div>
+    </div>
+    
+    <div class="experience-container">
+        <div class="experience-column block">
+            <h2 class="company-title">Veel</h2>
+            <div class="job-experience">
+                <h3 class="job-position">Customer Support Representative</h3>
+                <p class="job-duration">April 2025 - Present</p>
+                <ul class="job-responsibilities">
+                    <li>Managed 5,000+ client profiles in Apollo CRM and maintained consistent follow-ups</li>
+                    <li>Booked 30+ meetings and closed 12 successful deals through strategic outreach</li>
+                    <li>Ensured quick resolution of client queries and guided customers through platform navigation</li>
+                    <li>Handled support tickets in Zendesk for number checks, porting, and account issues</li>
+
+                </ul>
+            </div>
+        </div>
+        
+        <div class="experience-column block">
+            <h2 class="company-title">Dishhome</h2>
+            <div class="job-experience">
+                <h3 class="job-position">IT-Support</h3>
+                <p class="job-duration">september 2024 - Feb 2025</p>
+                <ul class="job-responsibilities">
+                    <li>Provided technical assistance for company systems and network infrastructure</li>
+                    <li>Ensured smooth operation of IT equipment and performed troubleshooting tasks</li>
+                    <li>Configured and maintained user accounts, hardware, and software as required</li>
+                    <li>Assisted in setting up new workstations and ensuring security compliance</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- experiences Page -->
+    <section id="projects" class="page-container">
+        <div class="page-header">
+            <h1 class="page-title">Projects</h1>
+            <button class="back-button" onclick="scrollToSection('home')">← Home</button>
+        </div>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400')"></div>
+                <div class="project-info">
+                    <h3 class="project-title">RPG-Dragon-Game</h3>
+                    <p class="project-description">Interactive web-based RPG with branching storylines, where player choices dynamically shape the narrative and outcomes through JavaScript-powered decision trees.</p>
+                    <a href="https://github.com/Nischal-k/RPG-Dragon-Game.git" class="project-link">View More →</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400')"></div>
+                <div class="project-info">
+                    <h3 class="project-title">Sub-Domain Finder</h3>
+                    <p class="project-description">Subdomain discovery tool that scans and analyzes access control configurations.</p>
+                    <a href="https://github.com/Nischal-k/programming_2" class="project-link">View More →</a>
+                </div>
+            </div>
+             <div class="project-card">
+                <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400')"></div>
+                <div class="project-info">
+                    <h3 class="project-title">Financial Sector Network Model</h3>
+                    <p class="project-description">Enterprise-grade MPLS network emulation replicating a banking corporation's secure infrastructure with Cisco routing protocols and VLAN segmentation.</p>
+                    <a href="https://github.com/Nischal-k/Networking-" class="project-link">View More →</a>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Stay in Touch Page -->
+    <section id="stay-in-touch" class="page-container">
+        <div class="page-header">
+            <h1 class="page-title">Stay in Touch</h1>
+            <button class="back-button" onclick="scrollToSection('home')">← Home</button>
+        </div>
+        
+        <div class="slider-container">
+            <div class="slider-content">Let's create something amazing together</div>
+        </div>
+        
+        <div class="stay-in-touch-container">
+            <div class="social-container">
+                <div class="social-grid">
+                    <div class="social-item">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#" class="social-link"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+                
+        <div class="info-social">
+                <div class="section-heading">Connect Through Social Media</div>
+                <p>Follow me for updates on my latest projects and research.</p>
+            </div>
+        </div>
+            
+            <div class="feedback-container">
+                <div class="feedback-box">
+                    <textarea class="feedback-textarea" placeholder="what do you think?"></textarea>
+                </div>
+                <a href="mailto:nixchool@gmail.com" class="hire-me-button">Hire me</a>
+                <p style="margin-top: 20px; text-align: center;">Or email me directly at: <a href="mailto:nixchool@gmail.com">nixchool@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+     <section id="footer">
+           <div class="wave-container">
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="black" fill-opacity="1" d="M0,160L0,288L75.8,288L75.8,96L151.6,96L151.6,256L227.4,256L227.4,128L303.2,128L303.2,64L378.9,64L378.9,128L454.7,128L454.7,96L530.5,96L530.5,256L606.3,256L606.3,32L682.1,32L682.1,192L757.9,192L757.9,160L833.7,160L833.7,256L909.5,256L909.5,160L985.3,160L985.3,192L1061.1,192L1061.1,128L1136.8,128L1136.8,160L1212.6,160L1212.6,96L1288.4,96L1288.4,224L1364.2,224L1364.2,192L1440,192L1440,320L1364.2,320L1364.2,320L1288.4,320L1288.4,320L1212.6,320L1212.6,320L1136.8,320L1136.8,320L1061.1,320L1061.1,320L985.3,320L985.3,320L909.5,320L909.5,320L833.7,320L833.7,320L757.9,320L757.9,320L682.1,320L682.1,320L606.3,320L606.3,320L530.5,320L530.5,320L454.7,320L454.7,320L378.9,320L378.9,320L303.2,320L303.2,320L227.4,320L227.4,320L151.6,320L151.6,320L75.8,320L75.8,320L0,320L0,320Z"></path>
+        </svg>
+    </div>
+    <div class="footer-container">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Location</h3>
+            <p>Kathmandu</p>
+            <p>Nepal</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p><a href="mailto:nixchool@gmail.com">nixchool@gmail.com</a></p>
+            <p>+977 9-81821-9000</p>
+        </div>
+        <div class="footer-section">
+            <h3>Availability</h3>
+            <p>Remote</p>
+            <p>Hybrid</p>
+            <p>Full-Time</p>
+            <p>Part-Time</p>
+        </div>
+        <div class="footer-section">
+            <h3>Legal</h3>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Terms of Service</a></p>
+            <p><a href="#">Cookie Preferences</a></p>
+        </div>
+    </div>
+</div>
+
+
+    
+    <!-- Include the JavaScript file at the bottom of the body -->
+     
+<script src="./script.js" defer></script>
 </body>
 </html>
+
+
