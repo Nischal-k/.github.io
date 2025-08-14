@@ -12,7 +12,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
     margin-right: calc(-1 * (100vw - 100%)); /* Compensation */
-    overflow-y: auto;
     
 
 
