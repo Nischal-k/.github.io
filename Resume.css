@@ -31,6 +31,7 @@ img {
 }
 
 .map-shell {
+  position: relative;
   width: min(1280px, calc(100% - 30px));
   margin: 28px auto;
   min-height: 96vh;
@@ -38,13 +39,37 @@ img {
   grid-template-columns: 0.96fr 1.55fr;
   background: rgba(255, 255, 255, 0.12);
   border: 3px solid #111;
-  box-shadow: 10px 10px 0 rgba(17, 17, 17, 0.9);
+  box-shadow: 12px 12px 0 rgba(17, 17, 17, 0.9);
+}
+
+.map-shell::before {
+  content: "";
+  position: absolute;
+  inset: 18px 18px auto auto;
+  width: 160px;
+  height: 120px;
+  border: 3px dashed rgba(17, 17, 17, 0.5);
+  border-radius: 50%;
+  transform: rotate(16deg);
 }
 
 .left-panel {
+  position: relative;
   padding: 22px 24px 18px;
   border-right: 3px solid #111;
   background: rgba(255, 255, 255, 0.06);
+}
+
+.left-panel::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 12%;
+  width: 18px;
+  height: 65%;
+  border: 3px dashed rgba(17, 17, 17, 0.6);
+  border-radius: 999px;
+  transform: rotate(6deg);
 }
 
 .top-row {
@@ -65,6 +90,7 @@ img {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1;
+  transform: rotate(-8deg);
 }
 
 .name-stack {
@@ -116,6 +142,7 @@ img {
   border-radius: 18px;
   box-shadow: 8px 8px 0 rgba(17, 17, 17, 0.85);
   background: #111;
+  transform: rotate(1deg);
 }
 
 .photo-card img {
@@ -174,6 +201,7 @@ img {
 }
 
 .story-panel {
+  position: relative;
   padding: 26px 24px 24px;
 }
 
@@ -207,18 +235,18 @@ img {
 .story-route {
   position: relative;
   display: grid;
-  gap: 22px;
+  gap: 24px;
   padding-left: 18px;
 }
 
 .story-route::before {
   content: "";
   position: absolute;
-  top: 12px;
-  bottom: 12px;
-  left: 11px;
+  top: 18px;
+  bottom: 18px;
+  left: 10px;
   width: 4px;
-  background: rgba(17, 17, 17, 0.7);
+  background: rgba(17, 17, 17, 0.72);
   border-radius: 99px;
 }
 
@@ -229,6 +257,18 @@ img {
   border: 3px solid #111;
   box-shadow: 7px 7px 0 rgba(17, 17, 17, 0.9);
   padding: 18px 18px 18px 26px;
+  border-radius: 18px;
+}
+
+.route-card::before {
+  content: "";
+  position: absolute;
+  inset: 10px 10px auto auto;
+  width: 26px;
+  height: 26px;
+  border: 2px solid rgba(17, 17, 17, 0.45);
+  border-radius: 50%;
+  transform: rotate(18deg);
 }
 
 .route-badge {
@@ -244,6 +284,7 @@ img {
   border-radius: 50%;
   font-size: 1rem;
   font-weight: 800;
+  box-shadow: 3px 3px 0 rgba(17, 17, 17, 0.7);
 }
 
 .route-body h3 {
@@ -366,10 +407,10 @@ img {
   text-decoration: underline;
 }
 
-.route-01 { background: rgba(250, 239, 186, 0.5); }
-.route-02 { background: rgba(231, 243, 255, 0.5); }
-.route-03 { background: rgba(222, 250, 224, 0.5); }
-.route-04 { background: rgba(242, 218, 255, 0.5); }
+.route-01 { background: rgba(250, 239, 186, 0.52); }
+.route-02 { background: rgba(231, 243, 255, 0.52); }
+.route-03 { background: rgba(222, 250, 224, 0.52); }
+.route-04 { background: rgba(242, 218, 255, 0.52); }
 
 @media (max-width: 900px) {
   .map-shell {
